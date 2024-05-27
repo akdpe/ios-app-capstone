@@ -97,6 +97,13 @@ struct Onboarding: View {
                     isLoggedIn = true
                 }
             }
+            .toolbar(content: {
+                ToolbarItem(id: "applogo", placement: .primaryAction) {
+                    Image("AppLogo")
+                        .resizable()
+                        .scaledToFit()
+                }
+            })
         }
         .navigationBarBackButtonHidden()
         
